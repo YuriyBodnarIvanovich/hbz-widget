@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+
 const WidgetDivs = document.querySelectorAll('.hbz_widget')
 
 WidgetDivs.forEach(Div => {
@@ -13,8 +12,3 @@ WidgetDivs.forEach(Div => {
     Div
   );
 })
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
