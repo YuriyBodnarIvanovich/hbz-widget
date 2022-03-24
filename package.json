@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "@types/styled-components": "^5.1.14"
   }
 }
