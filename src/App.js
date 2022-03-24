@@ -1,7 +1,12 @@
 import './App.css';
 
-function App() {
+function App({domElement}) {
+  const subreddit = domElement.getAttribute("data-subreddit")
+  console.log(subreddit);
 
+  const handleStart = () => {
+    console.log('Start!!!')
+  }
   return (
    <div className='hbz-widget-box'>
       <div className='questionnare-box'>
@@ -15,7 +20,7 @@ function App() {
             s to more accurately select courses for you
           </span>
         </div>
-        <button className='start-button'>START</button>
+        <button className='start-button' onClick={handleStart}>START</button>
       </div>
     </div>
   );

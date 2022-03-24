@@ -7,7 +7,7 @@ const WidgetDivs = document.querySelectorAll('.hbz_widget')
 WidgetDivs.forEach(Div => {
   ReactDOM.render(
     <React.StrictMode>
-      <App />
+      <App domElement={Div}/>
     </React.StrictMode>,
     Div
   );
