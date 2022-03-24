@@ -1,8 +1,15 @@
 import './App.css';
 
 function App({domElement}) {
-  const subreddit = domElement.getAttribute("data-subreddit")
-  console.log(subreddit);
+  const textColor = domElement.getAttribute("textColor");
+  const backgroundColor = domElement.getAttribute("backgroundColor");
+  const mainColor = domElement.getAttribute("mainColor");
+  const borderColor = domElement.getAttribute("borderColor");
+
+  console.log("textColor",textColor);
+  console.log("backgroundColor", backgroundColor);
+  console.log("mainColor", mainColor);
+  console.log("borderColor", borderColor);
 
   const handleStart = () => {
     console.log('Start!!!')
